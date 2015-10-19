@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     e.preventDefault();
 
-    var access_token = ENV['GITHUB_ACCESS_TOKEN']
+    var access_token = gitAccessToken
     var url = 'https://api.github.com/users/' + $('input.username').val() + "?access_token=" + access_token;
 
     var template = $('template').html();
